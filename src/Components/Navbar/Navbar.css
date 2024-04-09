@@ -1,0 +1,55 @@
+.app_header {
+    width: 100%;
+    height: 11.125rem;
+}
+
+.header__inner {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__left {
+    width: 50%;
+    margin-left: 6%;
+}
+
+.header__right {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: rgb(249, 79, 79);
+}
+
+.header_list {
+    height: auto;
+    width: 100%;
+    padding-left: 5rem;
+    padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+
+    > li {
+        width: auto;
+    }
+
+    > li a {
+        color: #fff;
+        font-family: "Commissioner", sans-serif;
+        font-size: 1rem;
+        font-weight: 300;
+    }
+}
+
+.active-every {
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(25, 25, 33);
+    font-weight: 400;
+}
