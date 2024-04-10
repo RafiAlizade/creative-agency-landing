@@ -1,0 +1,105 @@
+.app_advantages {
+    width: 100%;
+    margin-top: -15rem;
+    height: 68.75rem;
+}
+
+.advantages__inner {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    height: 100%;
+    position: relative;
+}
+
+.advantages__left {
+    max-width: 540px;
+    padding-top: 25rem;
+    margin-left: 18rem;
+    z-index: 5;
+}
+
+.advantages__desc {
+    font-family: "Commissioner", sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.advantages__right {
+    width: 100%;
+    position: absolute;
+    right: 0;
+    width: 65%;
+    height: 100%;
+    background-color: #f94f4f;
+    z-index: 4;
+}
+
+.advantages__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 3.5rem;
+    padding-left: 30%;
+    padding-top: 12.5rem;
+}
+
+.advantages__box {
+    width: 100%;
+    position: relative;
+}
+
+.advantages_op_number {
+    position: absolute;
+    opacity: 0.25;
+    font-family: "Commissioner", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5.5rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+.advantages_main_texts {
+    padding-left: 4rem;
+    padding-top: 2.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.advantages_main_texts {
+    width: 100%;
+}
+
+.advantages_description {
+    width: 60%;
+}
+
+.advantages_name_span {
+    color: rgb(255, 255, 255);
+    font-family: "Commissioner", sans-serif;
+    font-size: 1.55rem;
+    font-weight: 600;
+    line-height: 2rem;
+    letter-spacing: 0rem;
+    text-align: left;
+}
+
+.advantages_description_par {
+    color: rgb(255, 255, 255);
+    font-family: "Commissioner", sans-serif;
+    font-size: 1.13rem;
+    font-weight: 300;
+    line-height: 2rem;
+    letter-spacing: 0rem;
+    text-align: left;
+    width: 100%;
+}

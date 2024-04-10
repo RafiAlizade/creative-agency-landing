@@ -22,7 +22,7 @@ function Strategic() {
                 <div className="strategic__right__texts">
                     <h5 className="strategic_h5"><span className="red_color">Design</span> is strategic.</h5>
                     <span className="strategic_desc">“A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients.”</span>
-                    <a href="mailto:refielizade3@gmail.com"target='_blank' className="strategic_link">Schedule a Call</a>
+                    <Link to='mailto:refielizade3@gmail.com' className="strategic_link">Schedule a Call</Link>
                 </div>
             </div>
           </div>
