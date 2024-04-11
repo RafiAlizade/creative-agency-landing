@@ -7,13 +7,13 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: 
-    linear-gradient(90deg, rgba(255,255,255,1) 37%, rgba(2,0,36,0) 52%),
-    url('./../../assets/bg.svg');
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
-z-index: -1;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 1) 37%, rgba(2, 0, 36, 0) 52%),
+        url('./../../assets/bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 }
 
 .hero_inner {
@@ -58,4 +58,60 @@ z-index: -1;
 
 .hero_bg_resp {
     display: none;
+}
+
+.hero__mobile {
+    height: 15.625rem;
+    width: 100%;
+    display: none;
+
+    >img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 996px) {
+    .hero__h2 {
+        width: 70%;
+    }
+}
+
+@media (max-width: 839px) {
+    .hero__h2 {
+        width: 70%;
+    }
+
+    .hero_bg {
+        display: none;
+    }
+
+    .hero__mobile {
+        display: block;
+    }
+
+    .hero__mobile {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero__h2 {
+        width: 100%;
+        color: rgb(0, 0, 0);
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 5rem;
+        letter-spacing: 0rem;
+        text-align: left;
+    }
+
+    .hero__par {
+        width: 100%;
+        font-size: 1.3rem;
+    }
+
+    .app_header {
+        height: 6.125rem;
+    }
 }

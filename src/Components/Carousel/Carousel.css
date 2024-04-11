@@ -11,7 +11,7 @@
     align-items: start;
 }
 
-.strategic_icon {
+.carousel_icon {
     position: absolute;
     transform: translate(-50%, 50%);
     left: 50%;
@@ -128,4 +128,47 @@
     background-color: transparent;
     color: rgb(249, 79, 79);
     cursor: pointer;
+}
+
+@media (max-width: 839px) {
+    .carousel__inner {
+        flex-direction: column-reverse;
+        align-items: start;
+    }
+
+    .app_carousel  {
+        height: 100%;
+    }
+
+    .carousel__right {
+        position: relative;
+    }
+
+    .carousel__left {
+        width: 100%;
+    }
+
+    .carousel_text_buttons {
+        padding-left: 7%;
+    }
+
+    .carousel__right {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .carousel_icon {
+        display: none;
+    }
+}
+
+@media (max-width: 322px) {
+    .carousel_text {
+        color: rgb(255, 255, 255);
+font-size: 2rem;
+font-weight: 700;
+line-height: 2.5rem;
+letter-spacing: 0rem;
+text-align: left;
+    }
 }

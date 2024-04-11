@@ -33,3 +33,39 @@ font-family: "Commissioner", sans-serif;
     justify-content: end;
     padding-right: 5.5%;
 }
+
+.header__menu_icon {
+    font-size: 2rem;
+}
+
+.d-none {
+    display: none;
+}
+
+@media (max-width: 839px) {
+    .footer__inner {
+        flex-direction: column;
+        align-items: start;
+        gap: 1.7em;
+    }
+
+    .footer__right {
+        width: 100%;
+        justify-content: start;
+    }
+
+    .footer__left {
+        width: 100%;
+    }
+}
+
+@media (max-width: 317px) {
+    .footer_text_span {
+        color: rgb(0, 0, 0);
+font-size: 2rem;
+font-weight: 800;
+line-height: 2.5rem;
+letter-spacing: 0rem;
+text-align: left;
+    }
+}

@@ -68,7 +68,7 @@ function Carousel() {
                     </div>
                 </div>
 
-                <div className="strategic_icon">
+                <div className="carousel_icon">
                 <img src={strategicIcon} />
             </div>
 

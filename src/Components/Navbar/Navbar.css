@@ -9,6 +9,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    position: relative;
 }
 
 .header__left {
@@ -32,6 +33,7 @@
     display: flex;
     flex-direction: row;
     gap: 2.5rem;
+    align-items: center;
 
     > li {
         width: auto;
@@ -45,6 +47,43 @@
     }
 }
 
+.header__right_mobile {
+    display: none;
+    position: absolute;
+    width: 50%;
+    background: rgb(25, 25, 33);
+    right: 3.5%;
+    padding: 3rem 2rem;
+    top: 6.125rem;
+    z-index: 99;
+    animation-name: opacityAnim;
+    animation-duration: .4s;
+}
+
+.header_list_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+
+    > li {
+        width: auto;
+    }
+
+    > li a {
+        color: #fff;
+        font-family: "Commissioner", sans-serif;
+        font-weight: 300;
+    }
+}
+
+.active-every-mobile {
+    padding: 1rem;
+    background: rgb(249, 79, 79);
+    color: #fff;
+    text-align: center;
+}
+
 .active-every {
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
@@ -52,4 +91,107 @@
     padding-right: 2rem;
     background-color: rgb(25, 25, 33);
     font-weight: 400;
+}
+
+@keyframes opacityAnim {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.header__menu_icon {
+    display: none;
+}
+
+@media (max-width: 1355px) {
+    .header__left {
+        width: 40%;
+    }
+
+    .header__right {
+        width: 60%;
+    }
+}
+
+
+
+@media (max-width: 1175px) {
+    .header__left {
+        width: 40%;
+    }
+
+    .header__right {
+        width: 60%;
+    }
+}
+
+@media (max-width: 982px) {
+    .active-every {
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 1175px) {
+    .header__left {
+        width: 30%;
+    }
+
+    .header__right {
+        width: 70%;
+    }
+}
+
+@media (max-width: 926px) {
+    .active-every {
+        padding: 1rem;
+    }
+
+    .header_list {
+        padding-left: 2rem;
+    }
+}
+
+@media (max-width: 844px) {
+    .header__right {
+        width: 70%;
+    }
+
+    .header__left {
+        width: 30%;
+    }
+
+    .header__right {
+        background-color: transparent;
+    }
+
+    .header_list {
+        display: none;
+    }
+
+    .header__menu_icon {
+        display: block;
+    }
+
+    .header__right {
+        width: 50%;
+        justify-content: end;
+    }
+
+    .header__left {
+        width: 50%;
+    }
+
+    .header__menu_icon {
+        padding-right: 6%;
+    }
+}
+
+@media (max-width: 1572px) {
+    .advantages__left  {
+        margin-left: 9rem;
+    }
 }
