@@ -1,6 +1,6 @@
 import './Navbar.css'
 import navLogo from './../../assets/logo.svg'
-import { NavLink } from 'react-router-dom'
+import { NavLink , Link } from 'react-router-dom'
 import { List } from 'react-bootstrap-icons';
 
 function Navbar() {
@@ -19,7 +19,7 @@ function Navbar() {
                <div className="header__inner">
                <div className="header__left">
                 <div className="header__logo_container">
-                        <img src={navLogo} alt="" />
+                        <Link to='/'><img src={navLogo} alt="" /></Link>
                     </div>
                 </div>
 
@@ -28,7 +28,7 @@ function Navbar() {
                             <li> <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink></li>
                            <li> <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink></li>
                             <li><NavLink to='/service' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Service</NavLink></li>
-                            <li><NavLink to='/service' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Projects</NavLink></li>
+                            <li><NavLink to='/projects' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Projects</NavLink></li>
                             <li className='active-every'><a href="mailto:refielizade3@gmail.com">Schedule a Call</a></li>
                         </ul>
 
@@ -39,9 +39,10 @@ function Navbar() {
 
                 <div className="header__right_mobile">
                 <ul className="header_list_mobile">
-                           <li> <NavLink to='/about'>About</NavLink></li>
-                            <li><NavLink to='/service'>Service</NavLink></li>
-                            <li><NavLink to='/service'>Projects</NavLink></li>
+                           <li> <NavLink to='/' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Home</NavLink></li>
+                           <li> <NavLink to='/about' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>About</NavLink></li>
+                            <li><NavLink to='/service' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Service</NavLink></li>
+                            <li><NavLink to='/projects' className={({ isActive }) => (isActive ? 'active' : 'inactive')}>Projects</NavLink></li>
                             <li className='active-every-mobile'><a href="mailto:refielizade3@gmail.com">Schedule a Call</a></li>
                         </ul>
                 </div>

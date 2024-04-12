@@ -56,6 +56,12 @@
     color: #fff;
 }
 
+.hero__btn:hover {
+    background: rgb(255, 147, 147);
+    cursor: pointer;
+    font-weight: 600;
+}
+
 .hero_bg_resp {
     display: none;
 }

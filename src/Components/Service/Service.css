@@ -1,0 +1,133 @@
+.service_inner {
+    padding: 7.25rem 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.9rem;
+    font-family: "Commissioner", sans-serif;
+
+  }
+  
+  .service_inner_left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    > img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+  .service_inner_right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+  }
+  
+  .service_inner_right_h5 {
+    width: 70%;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 2.75rem;
+    color: #193766;
+  }
+  .service_inner_right_h5 .service_inner_right_h5_span {
+    text-decoration: underline;
+  }
+  
+  .service_inner_right_p {
+    color: #697B98;
+    font-family: "Commissioner", sans-serif;
+  }
+  
+  .service_inner_right_service_box {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  ._service_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.5rem;
+    vertical-align: bottom;
+  }
+  
+  ._service_box_square {
+    color: rgb(249, 79, 79);
+  }
+  
+  ._service_box_p {
+    font-size: 1rem;
+    font-family: DM Sans;
+    color: #193766;
+    font-family: "Commissioner", sans-serif;
+  }
+  ._service_box_p ._service_box_p_span {
+    color: rgb(249, 79, 79);
+    font-family: "Commissioner", sans-serif;
+  }
+
+  @media (max-width: 1112px) {
+    .service_inner {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service_inner_left {
+      width: 100%;
+
+      > img {
+        width: 60%;
+        height: 60%;
+      }
+    }
+
+    .service_inner_right {
+      width: 100%;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .service_inner_right_h5 {
+      text-align: center;
+    }
+
+    .service_inner_right_p {
+      text-align: center;
+    }
+
+    .service_inner_right_benefits_box {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    ._service_box {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 337px) {
+    .service_inner_right_h5 {
+      width: 100%;
+      font-size: 1.5rem;
+    }
+  }

@@ -82,6 +82,7 @@
     background: rgb(249, 79, 79);
     color: #fff;
     text-align: center;
+
 }
 
 .active-every {
@@ -91,6 +92,15 @@
     padding-right: 2rem;
     background-color: rgb(25, 25, 33);
     font-weight: 400;
+}
+
+.active-every:hover {
+    cursor: pointer;
+    background: rgb(67, 67, 86);
+}
+
+.header_list li a:hover {
+    font-weight: 600;
 }
 
 @keyframes opacityAnim {
@@ -193,5 +203,37 @@
 @media (max-width: 1572px) {
     .advantages__left  {
         margin-left: 9rem;
+    }
+}
+
+@media (max-width: 254px) {
+    .header__left {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .header__right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__logo_container {
+        width: 70%;
+        display: block;
+
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .header__menu_icon {
+        padding-right: 0;
+    }
+
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
     }
 }

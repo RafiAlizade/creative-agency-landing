@@ -1,5 +1,9 @@
 .app_footer {
     width: 100%;
+    background: url('./../../assets/footer_icon.svg');
+    background-repeat: no-repeat;
+    background-position-x: -3%;
+    background-position-y: center;
 }
 
 .footer__inner {
@@ -67,5 +71,23 @@ font-weight: 800;
 line-height: 2.5rem;
 letter-spacing: 0rem;
 text-align: left;
+    }
+}
+
+@media (max-width: 1287px) {
+    .app_footer {
+        background-position-x: -8%;
+    }
+}
+
+@media (max-width: 993px) {
+    .app_footer {
+        background-position-x: -10%;
+    }
+}
+
+@media (max-width: 949px) {
+    .app_footer {
+        background: none;
     }
 }

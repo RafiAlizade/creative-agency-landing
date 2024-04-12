@@ -130,6 +130,18 @@
     cursor: pointer;
 }
 
+.next_button:hover {
+    border-color: rgb(255, 147, 147);
+    color: rgb(255, 147, 147);
+    cursor: pointer;
+}
+
+.back_button:hover {
+    border-color: rgb(255, 147, 147);
+    color: rgb(255, 147, 147);
+    cursor: pointer;
+}
+
 @media (max-width: 839px) {
     .carousel__inner {
         flex-direction: column-reverse;

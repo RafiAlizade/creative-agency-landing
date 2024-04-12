@@ -70,7 +70,12 @@
     text-underline-offset: 0.5rem;
     font-family: "Commissioner", sans-serif;
     font-size: 1.1rem;
+}
 
+.strategic_link:hover {
+    color: rgb(255, 147, 147);
+    cursor: pointer;
+    text-decoration-color: rgb(255, 147, 147);
 }
 
 .strategic_icon {
